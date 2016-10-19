@@ -16,6 +16,14 @@
       "title": "Melbourne",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "fremantle",
+      "components": [],
+      "title": "Fremantle",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [],
