@@ -1,5 +1,6 @@
 {
   "CorePlugins": [
+    "com.telerik.plugin.telerikanalytics@3.4.1",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
     "cordova-plugin-contacts",
@@ -18,7 +19,6 @@
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
     "cordova-plugin-vibration",
-    "cordova-plugin-whitelist",
-    "com.telerik.LivePatch"
+    "cordova-plugin-whitelist"
   ]
 }
