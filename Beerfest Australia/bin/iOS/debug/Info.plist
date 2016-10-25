@@ -36,7 +36,7 @@
     <key>CFBundleIdentifier</key>
     <string>com.duncanunderwood.beerfestaustralia</string>
     <key>CFBundleName</key>
-    <string>appbuilder1</string>
+    <string>Beerfest Australia</string>
     <key>CFBundleDisplayName</key>
     <string>Beerfest Australia</string>
     <key>CFBundleInfoDictionaryVersion</key>
@@ -46,7 +46,7 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>2016.1024.1505</string>
+    <string>2016.1025.1026</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
     <key>LSRequiresIPhoneOS</key>

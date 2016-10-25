@@ -5,7 +5,7 @@
       "type": "kendo-ui-mobile:view",
       "name": "homeView",
       "components": [],
-      "title": "Home",
+      "title": "Beerfest Australia",
       "addToNavigation": true,
       "icon": "home"
     },
@@ -81,66 +81,6 @@
       "title": "About",
       "addToNavigation": true,
       "icon": "info"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "contact",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:form",
-          "components": [
-            {
-              "type": "kendo-ui-mobile:editableListForm",
-              "components": [
-                {
-                  "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "name",
-                  "dataBindingRelationChildren": "[]",
-                  "dataBindingMultipleSelectChildren": "[]",
-                  "title": "Name",
-                  "inputType": "text",
-                  "titlePosition": "top",
-                  "inputTextType": "text",
-                  "placeholder": "First Name and Last Name",
-                  "dataBinding": "DisplayName"
-                },
-                {
-                  "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "text",
-                  "dataBindingRelationChildren": "[]",
-                  "dataBindingMultipleSelectChildren": "[]",
-                  "title": "Message:",
-                  "inputType": "textArea",
-                  "wideFieldTitlePosition": "top"
-                },
-                {
-                  "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "email",
-                  "dataBindingRelationChildren": "[]",
-                  "dataBindingMultipleSelectChildren": "[]",
-                  "title": "Email",
-                  "inputType": "text",
-                  "titlePosition": "top",
-                  "inputTextType": "email",
-                  "placeholder": "yourname@emailaddress.com.au",
-                  "dataBinding": "DisplayName"
-                }
-              ],
-              "name": "editableListForm",
-              "formType": "add"
-            }
-          ],
-          "name": "contactModel",
-          "enableDataBinding": true,
-          "dataProvider": "appBuilder1",
-          "collection": "Users",
-          "submitButton": "Confirm",
-          "cancelButton": "Cancel"
-        }
-      ],
-      "title": "Contact Us",
-      "addToNavigation": true,
-      "icon": "contacts"
     }
   ],
   "dataProviders": [
@@ -156,8 +96,5 @@
   "name": "appbuilder1",
   "navigation": "drawer",
   "view": "homeView",
-  "skin": "flat",
-  "skinMainColor": "#1a1a1a",
-  "skinTextColor": "#ffffff",
-  "skinAccentColor": "#10c4b2"
+  "skin": "native"
 }

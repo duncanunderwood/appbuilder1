@@ -51,9 +51,15 @@
       "AUTO_TRACK_EXCEPTIONS": "True",
       "AUTO_TRACK_KENDO_EVENTS": "True",
       "PRODUCT_ID": "81a886335c254b48bee6ea49a8bb1bfa"
+    },
+    "com.telerik.feedback": {
+      "API_KEY": "wet9j54227cnw5h8",
+      "API_URL": "https://platform.telerik.com/feedback/api/v1",
+      "ENABLE_SHAKE": "True"
     }
   },
   "CorePlugins": [
+    "com.telerik.feedback@2.0.4",
     "com.telerik.plugin.telerikanalytics@3.4.1",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
