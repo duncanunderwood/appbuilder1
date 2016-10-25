@@ -6,7 +6,7 @@
   "DisplayName": "Beerfest Australia",
   "Author": "Duncan Underwood",
   "Description": "Beerfest Australia",
-  "BundleVersion": "1.0",
+  "BundleVersion": "1.01",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",

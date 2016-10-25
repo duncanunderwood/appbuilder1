@@ -46,9 +46,9 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>2016.1025.1418</string>
+    <string>2016.1025.1447</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
+    <string>1.01</string>
     <key>LSRequiresIPhoneOS</key>
     <true />
     <key>UILaunchImages</key>
@@ -201,10 +201,7 @@
     <string>UIStatusBarStyleDefault</string>
     <key>UIBackgroundModes</key>
     <array>
-      <string>location</string>
-      <string>remote-notification</string>
-    </array>
-    <key>IceniumLiveSyncEnabled</key>
-    <true />
+					<string>location</string><string>remote-notification</string>
+				</array>
   </dict>
 </plist>
