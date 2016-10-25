@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+
+    <link href="styles/overrides.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="app.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script src="dataProviders/appBuilder1.js"></script>
+</head>
+
+<body id="appbuilder1">
+    <script src="components/contact/index.js"></script>
+    <script src="components/aboutView/index.js"></script>
+    <script src="components/photos/index.js"></script>
+    <script src="components/brisbane/index.js"></script>
+    <script src="components/melbourne/index.js"></script>
+    <script src="components/hobart/index.js"></script>
+    <script src="components/esk/index.js"></script>
+    <script src="components/fremantle/index.js"></script>
+    <script src="components/homeView/index.js"></script>
+    <div data-role="layout" data-id="main">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            </div>
+        </header>
+    </div>
+
+    <div data-role="layout" data-id="main-nonav">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+    </div>
+
+    <div id="appDrawer" data-role="drawer" data-title="Navigation">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul id="navigation-container" data-role="listview">
+            <li><a href="components/homeView/view.html" data-icon="home">Home</a></li>
+            <li><a href="components/fremantle/view.html" data-icon="mostrecent">Fremantle Beerfest</a></li>
+            <li><a href="components/esk/view.html" data-icon="mostrecent">Esk Beerfest</a></li>
+            <li><a href="components/hobart/view.html" data-icon="mostrecent">Hobart Beerfest</a></li>
+            <li><a href="components/melbourne/view.html" data-icon="mostrecent">Melbourne Beerfest</a></li>
+            <li><a href="components/brisbane/view.html" data-icon="mostrecent">Brisbane Beerfest</a></li>
+            <li><a href="components/photos/view.html" data-icon="camera">Photos</a></li>
+            <li><a href="components/aboutView/view.html" data-icon="info">About</a></li>
+            <li><a href="components/contact/view.html" data-icon="contacts">Contact Us</a></li>
+        </ul>
+    </div>
+    <!--  start index html save -->
+    <!--  end index html save -->
+
+    <!-- START_CUSTOM_CODE_appbuilder1 -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_appbuilder1 -->
+</body>
+
+</html>

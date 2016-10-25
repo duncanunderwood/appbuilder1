@@ -1,0 +1,52 @@
+<div data-role="view" data-title="Contact Us" data-layout="main" data-model="app.contact" data-show="app.contact.onShow" data-after-show="app.contact.afterShow" id="contactScreen" class="screen">
+    <div id="contactModel" class="form-view screen__content screen__content--form add-item-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+
+                    <label id="nameField" class="field field--text km-label-above">
+                        <span class="field__label">Name</span>
+
+
+                        <input id="name" data-bind="value: addFormData.name" placeholder="First Name and Last Name" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="textField" class="km-label-above field field--textarea">
+
+                        <span class="field__label">Message:</span>
+
+                        <textarea rows="7"></textarea>
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="emailField" class="field field--email km-label-above">
+                        <span class="field__label">Email</span>
+
+
+                        <input id="email" data-bind="value: addFormData.email" placeholder="yourname@emailaddress.com.au" type="email">
+
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: contactModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: contactModel.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_contactModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_contactModel -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_contact -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_contact -->
+</div>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Deployment AppPlatformVersion="8.0" xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment">
+    <DefaultLanguage code="en-US" xmlns="" />
+    <Languages xmlns="">
+        <Language code="en-US" />
+    </Languages>
+    <App Author="Duncan Underwood" BitsPerPixel="32" Description="Beerfest Australia" Genre="apps.normal" ProductID="{b106f67b-1779-4eb6-bfa0-adfbe57f5894}" Publisher="Duncan Underwood" PublisherID="{b106f67b-1779-4eb6-bfa0-adfbe57f5894}" RuntimeType="Silverlight" Title="Beerfest Australia" Version="1.0" xmlns="">
+        <IconPath IsRelative="true" IsResource="false">App_Resources\WP8\ApplicationIcon.png</IconPath>
+        <Capabilities>
+            <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+            <Capability Name="ID_CAP_NETWORKING" />
+            <Capability Name="ID_CAP_ISV_CAMERA" />
+            <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+            <Capability Name="ID_CAP_CONTACTS" />
+            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+            <Capability Name="ID_CAP_SENSORS" />
+            <Capability Name="ID_CAP_LOCATION" />
+            <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+            <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+            <Capability Name="ID_CAP_MICROPHONE" />
+        </Capabilities>
+        <Tasks>
+            <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+        </Tasks>
+        <Tokens>
+            <PrimaryToken TaskName="_default" TokenID="appbuilder1Token">
+                <TemplateFlip>
+                    <SmallImageURI IsRelative="true" IsResource="false">App_Resources\WP8\Tiles\Iconic\110x110.png</SmallImageURI>
+                    <Count>0</Count>
+                    <BackgroundImageURI IsRelative="true" IsResource="false">App_Resources\WP8\Tiles\Iconic\202x202.png</BackgroundImageURI>
+                    <Title>Beerfest Australia</Title>
+                    <BackContent />
+                    <BackBackgroundImageURI />
+                    <BackTitle />
+                    <LargeBackgroundImageURI>Assets\WideLogo.png</LargeBackgroundImageURI>
+                    <LargeBackContent />
+                    <LargeBackBackgroundImageURI />
+                    <DeviceLockImageURI />
+                    <HasLarge>true</HasLarge>
+                </TemplateFlip>
+            </PrimaryToken>
+        </Tokens>
+        <ScreenResolutions>
+            <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+            <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+            <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+        </ScreenResolutions>
+    </App>
+</Deployment>

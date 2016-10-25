@@ -1,0 +1,78 @@
+{
+  "ProjectName": "Beerfest Australia",
+  "ProjectGuid": "{ebc06915-6351-4851-9002-c5816f09aeb3}",
+  "projectVersion": 1,
+  "AppIdentifier": "com.duncanunderwood.beerfestaustralia",
+  "DisplayName": "Beerfest Australia",
+  "Author": "Duncan Underwood",
+  "Description": "Beerfest Australia",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [
+    "location",
+    "remote-notification"
+  ],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.BATTERY_STATS",
+    "android.permission.CAMERA",
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "Beerfest Australia",
+  "WP8Publisher": "Duncan Underwood",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{b106f67b-1779-4eb6-bfa0-adfbe57f5894}",
+  "WP8ProductID": "{b106f67b-1779-4eb6-bfa0-adfbe57f5894}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "com.duncanunderwood.beerfestaustralia",
+  "WP8WindowsPublisherName": "CN=48A1B29E-70F9-4D20-BAE5-7935D7CB93F5",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CordovaPluginVariables": {
+    "com.telerik.plugin.telerikanalytics": {
+      "AUTO_TRACK_EXCEPTIONS": "True",
+      "AUTO_TRACK_KENDO_EVENTS": "True",
+      "PRODUCT_ID": "81a886335c254b48bee6ea49a8bb1bfa"
+    }
+  },
+  "CorePlugins": [
+    "com.telerik.plugin.telerikanalytics@3.4.1",
+    "cordova-plugin-battery-status",
+    "cordova-plugin-camera",
+    "cordova-plugin-contacts",
+    "cordova-plugin-device",
+    "cordova-plugin-device-motion",
+    "cordova-plugin-device-orientation",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-file",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-globalization",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-media",
+    "cordova-plugin-media-capture",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-vibration",
+    "cordova-plugin-whitelist"
+  ]
+}
