@@ -6,7 +6,7 @@
   "DisplayName": "Beerfest Australia",
   "Author": "Duncan Underwood",
   "Description": "Beerfest Australia",
-  "BundleVersion": "1.05",
+  "BundleVersion": "1.0.6",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
@@ -14,6 +14,7 @@
   ],
   "iOSBackgroundMode": [
     "location",
+    "fetch",
     "remote-notification"
   ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",

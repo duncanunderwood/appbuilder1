@@ -1,0 +1,38 @@
+<div data-role="view" data-title="Stall Holders" data-layout="main" data-model="app.stallHolder" data-show="app.stallHolder.onShow" data-after-show="app.stallHolder.afterShow" id="stallHolderScreen" class="screen">
+
+    <!-- START_CUSTOM_CODE_stallHolder -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_stallHolder -->
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a data-role="backbutton" data-align="left" class="backButtonWrapper" style="display: none;">Back</a>
+            <span data-role="view-title"></span>
+
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+
+
+        </div>
+    </header>
+
+
+    <!--  Certain features like grouping and inset styling are not supported when endless scroll is enabled. -->
+
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="" data-template="stallHolderModelTemplate" data-bind="source: stallHolderModel.dataSource, events: {click: stallHolderModel.itemClick}" data-pull-to-refresh="true" data-endless-scroll="true">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_stallHolderModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_stallHolderModel -->
+    <script type="text/x-kendo-template" id="stallHolderModelTemplate">
+        <div class="image-with-text">
+            # data = app.stallHolder.stallHolderModel.fixHierarchicalData(data); #
+
+            <img src="#: data['StallImageUrl'] #">
+            <h3><span class="#: data.icon() #"></span>#: data['StallHeading'] #</h3>
+            <p>#: data['StallDesciption'] #</p>
+        </div>
+    </script>
+</div>

@@ -1,0 +1,25 @@
+<div data-role="view" data-title="Details" data-model="app.fremantleEventInfo.fremantleEventInfoModel" data-bind="events: { show: detailsShow }" id="fremantleEventInfoModelScreen" class="screen screen--detail">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a data-role="backbutton" data-align="left">Back</a>
+            <span>Detail</span>
+        </div>
+    </header>
+
+    <div class="details-content screen__content screen__content--details">
+        <div class="km-listview-wrapper">
+            <ul class="km-listview km-list km-listinset details-fields">
+                <li>
+                    <h3 data-bind="text: currentItem.FremantleEventQuestion"></h3></li>
+                <li>
+                    <div data-bind="html: currentItem.FremantleEventAnswer"></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- START_CUSTOM_CODE_fremantleEventInfoModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_fremantleEventInfoModel -->
+</div>

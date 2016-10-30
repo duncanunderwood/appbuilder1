@@ -1,0 +1,37 @@
+<div data-role="view" data-title="Details" data-model="app.stallHolder.stallHolderModel" data-bind="events: { show: detailsShow }" id="stallHolderModelScreen" class="screen screen--detail">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a data-role="backbutton" data-align="left">Back</a>
+            <span>Detail</span>
+        </div>
+    </header>
+
+    <div class="details-content screen__content screen__content--details">
+        <div class="km-listview-wrapper">
+            <ul class="km-listview km-list km-listinset details-fields">
+                <li>
+                    <h3 data-bind="text: currentItem.StallHeading"></h3></li>
+                <li>
+                    <div data-bind="html: currentItem.StallDesciption"></div>
+                </li>
+                <li><img data-bind="attr: { src: currentItem.StallImageUrl }" width="100%" height="auto"></li>
+                <li class="form-content-item">
+                    <div id="hyperlinkField" class="editableListItem field field--link">
+
+                        <div class="field__label">Website</div>
+
+                        <div class="field__content">
+
+                            <a href="#" onclick="app.openLink(app.stallHolder.stallHolderModel.linkBind('|StallURL'));" data-bind="text:currentItem.StallURL" class="link"></a>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- START_CUSTOM_CODE_stallHolderModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_stallHolderModel -->
+</div>

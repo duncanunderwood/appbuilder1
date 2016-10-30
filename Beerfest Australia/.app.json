@@ -11,11 +11,183 @@
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "fremantle",
-      "components": [],
-      "title": "Fremantle Beerfest",
+      "name": "tickets",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "grabYourTickets",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Purchase",
+                  "inputType": "link",
+                  "titlePosition": "left",
+                  "linkType": "http",
+                  "dataBindingLinkAddress": "TicketURL",
+                  "linkText": "Grab Your Tickets"
+                }
+              ],
+              "name": "editableListForm11",
+              "formType": "detail"
+            }
+          ],
+          "name": "ticketsModel",
+          "dataProvider": "appBuilder1",
+          "collection": "BeerfestTickets",
+          "headerField": "TicketName",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": true,
+          "endlessScroll": true,
+          "isMapView": false,
+          "serverSideSorting": true,
+          "serverSideSortingField": "CreatedAt",
+          "serverSideSortingDirection": "asc",
+          "serverSidePaging": true,
+          "serverSidePagingSize": 10,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Tickets",
+          "detailSubHeaderField": "TicketName"
+        }
+      ],
+      "title": "Tickets",
       "addToNavigation": true,
-      "icon": "mostrecent"
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "news",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "newsModel",
+          "dataProvider": "appBuilder1",
+          "collection": "News",
+          "headerField": "NewsHeader",
+          "subHeaderField": "NewsDate",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": true,
+          "endlessScroll": true,
+          "isMapView": false,
+          "serverSideSorting": true,
+          "serverSideSortingField": "CreatedAt",
+          "serverSideSortingDirection": "desc",
+          "serverSidePaging": true,
+          "serverSidePagingSize": 10,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "News",
+          "detailSubHeaderField": "NewsHeader",
+          "detailDescriptionField": "NewsInformation"
+        }
+      ],
+      "title": "News",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "fremantleBeerfest",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "fremantleEventInfo",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Event Info",
+                  "inputType": "link",
+                  "titlePosition": "left",
+                  "linkType": "view",
+                  "linkToView": "homeView",
+                  "linkText": "Event Info",
+                  "components": [
+                    {
+                      "type": "kendo-ui-mobile:editableList",
+                      "listExtraFields": [],
+                      "detailExtraFields": [],
+                      "addScreenExtraFields": [],
+                      "editScreenExtraFields": [],
+                      "components": [],
+                      "name": "fremantleEventInfoModel",
+                      "dataProvider": "appBuilder1",
+                      "collection": "FremantleEventInfo",
+                      "headerField": "FremantleEventQuestion",
+                      "addItemForm": false,
+                      "editItemForm": false,
+                      "deleteItemButton": false,
+                      "pullToRefresh": true,
+                      "endlessScroll": true,
+                      "isMapView": false,
+                      "serverSideSorting": true,
+                      "serverSideSortingField": "CreatedAt",
+                      "serverSideSortingDirection": "asc",
+                      "serverSidePaging": true,
+                      "serverSidePagingSize": 10,
+                      "detailHeaderFieldSource": "static",
+                      "detailHeaderFieldValue": "Detail",
+                      "detailSubHeaderField": "FremantleEventQuestion",
+                      "detailDescriptionField": "FremantleEventAnswer"
+                    }
+                  ]
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "fremantleTickets",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Tickets",
+                  "inputType": "link",
+                  "titlePosition": "left",
+                  "linkType": "view",
+                  "linkToView": "homeView",
+                  "linkText": "Tickets"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "fremantleStallHolders",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Stall Holders",
+                  "inputType": "link",
+                  "titlePosition": "left",
+                  "linkType": "view",
+                  "linkToView": "stallHolder",
+                  "linkText": "Stall Holders"
+                }
+              ],
+              "name": "editableListForm17",
+              "formType": "add"
+            }
+          ],
+          "name": "fremantleBeerfestModel",
+          "enableDataBinding": false
+        }
+      ],
+      "title": "FremantleBeerfest",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     },
     {
       "type": "kendo-ui-mobile:view",
@@ -51,11 +223,101 @@
     },
     {
       "type": "kendo-ui-mobile:view",
+      "name": "stallHolder",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "hyperlink",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Website",
+                  "inputType": "link",
+                  "titlePosition": "left",
+                  "linkType": "http",
+                  "dataBindingLinkAddress": "StallURL",
+                  "dataBindingLinkText": "StallURL"
+                }
+              ],
+              "name": "editableListForm5",
+              "formType": "detail"
+            }
+          ],
+          "name": "stallHolderModel",
+          "dataProvider": "appBuilder1",
+          "collection": "StallHolders",
+          "headerField": "StallHeading",
+          "iconField": true,
+          "imageField": "StallImage",
+          "subHeaderField": "StallDesciption",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": true,
+          "endlessScroll": true,
+          "isMapView": false,
+          "serverSideSorting": true,
+          "serverSideSortingField": "StallHeading",
+          "serverSideSortingDirection": "asc",
+          "serverSidePaging": true,
+          "serverSidePagingSize": 10,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail",
+          "detailSubHeaderField": "StallHeading",
+          "detailDescriptionField": "StallDesciption",
+          "detailImageField": "StallImage"
+        }
+      ],
+      "title": "Stall Holders",
+      "addToNavigation": true,
+      "icon": "stop"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
       "name": "photos",
       "components": [],
       "title": "Photos",
       "addToNavigation": true,
       "icon": "camera"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "login",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "loginModel",
+          "dataProvider": "appBuilder1",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "homeView",
+          "gotoSigninLabel": "Sign In",
+          "enableLogout": true,
+          "logoutLabel": "Sign Out",
+          "enableRememberme": true,
+          "remembermeLabel": "Remember Me",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "homeView"
+        }
+      ],
+      "title": "Login",
+      "addToNavigation": true,
+      "icon": "home"
     },
     {
       "type": "kendo-ui-mobile:view",
@@ -81,6 +343,13 @@
       "title": "About",
       "addToNavigation": true,
       "icon": "info"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "fremantleEventInfo",
+      "components": [],
+      "title": "Fremantle Event Info",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [

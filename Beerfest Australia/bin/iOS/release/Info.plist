@@ -46,9 +46,9 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>2016.1025.1559</string>
+    <string>2016.1030.1534</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.05</string>
+    <string>1.0.6</string>
     <key>LSRequiresIPhoneOS</key>
     <true />
     <key>UILaunchImages</key>
@@ -201,7 +201,7 @@
     <string>UIStatusBarStyleDefault</string>
     <key>UIBackgroundModes</key>
     <array>
-					<string>location</string><string>remote-notification</string>
+					<string>location</string><string>fetch</string><string>remote-notification</string>
 				</array>
   </dict>
 </plist>
