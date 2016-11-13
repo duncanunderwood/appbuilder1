@@ -10,11 +10,11 @@ app.login = kendo.observable({
 
 // END_CUSTOM_CODE_login
 (function(parent) {
-    var provider = app.data.appBuilder1,
+    var provider = app.data.beerfest,
         mode = 'signin',
-        registerRedirect = 'homeView',
-        signinRedirect = 'homeView',
-        rememberKey = 'appBuilder1_authData_loginModel',
+        registerRedirect = 'news',
+        signinRedirect = 'news',
+        rememberKey = 'beerfest_authData_loginModel',
         init = function(error, result) {
             $('.status').text('');
 

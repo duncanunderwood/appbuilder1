@@ -11,6 +11,43 @@
     },
     {
       "type": "kendo-ui-mobile:view",
+      "name": "news",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "newsModel",
+          "dataProvider": "beerfest",
+          "collection": "News",
+          "headerField": "NewsHeader",
+          "subHeaderField": "NewsDate",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": true,
+          "endlessScroll": true,
+          "isMapView": false,
+          "serverSideSorting": true,
+          "serverSideSortingField": "CreatedAt",
+          "serverSideSortingDirection": "desc",
+          "serverSidePaging": true,
+          "serverSidePagingSize": 10,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "News",
+          "detailSubHeaderField": "NewsHeader",
+          "detailDescriptionField": "NewsInformation"
+        }
+      ],
+      "title": "News",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
       "name": "tickets",
       "components": [
         {
@@ -41,7 +78,7 @@
             }
           ],
           "name": "ticketsModel",
-          "dataProvider": "appBuilder1",
+          "dataProvider": "beerfest",
           "collection": "BeerfestTickets",
           "headerField": "TicketName",
           "addItemForm": false,
@@ -66,43 +103,6 @@
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "news",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:editableList",
-          "listExtraFields": [],
-          "detailExtraFields": [],
-          "addScreenExtraFields": [],
-          "editScreenExtraFields": [],
-          "components": [],
-          "name": "newsModel",
-          "dataProvider": "appBuilder1",
-          "collection": "News",
-          "headerField": "NewsHeader",
-          "subHeaderField": "NewsDate",
-          "addItemForm": false,
-          "editItemForm": false,
-          "deleteItemButton": false,
-          "pullToRefresh": true,
-          "endlessScroll": true,
-          "isMapView": false,
-          "serverSideSorting": true,
-          "serverSideSortingField": "CreatedAt",
-          "serverSideSortingDirection": "desc",
-          "serverSidePaging": true,
-          "serverSidePagingSize": 10,
-          "detailHeaderFieldSource": "static",
-          "detailHeaderFieldValue": "News",
-          "detailSubHeaderField": "NewsHeader",
-          "detailDescriptionField": "NewsInformation"
-        }
-      ],
-      "title": "News",
-      "addToNavigation": true,
-      "icon": "info"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
       "name": "fremantleBeerfest",
       "components": [
         {
@@ -121,36 +121,7 @@
                   "titlePosition": "left",
                   "linkType": "view",
                   "linkToView": "homeView",
-                  "linkText": "Event Info",
-                  "components": [
-                    {
-                      "type": "kendo-ui-mobile:editableList",
-                      "listExtraFields": [],
-                      "detailExtraFields": [],
-                      "addScreenExtraFields": [],
-                      "editScreenExtraFields": [],
-                      "components": [],
-                      "name": "fremantleEventInfoModel",
-                      "dataProvider": "appBuilder1",
-                      "collection": "FremantleEventInfo",
-                      "headerField": "FremantleEventQuestion",
-                      "addItemForm": false,
-                      "editItemForm": false,
-                      "deleteItemButton": false,
-                      "pullToRefresh": true,
-                      "endlessScroll": true,
-                      "isMapView": false,
-                      "serverSideSorting": true,
-                      "serverSideSortingField": "CreatedAt",
-                      "serverSideSortingDirection": "asc",
-                      "serverSidePaging": true,
-                      "serverSidePagingSize": 10,
-                      "detailHeaderFieldSource": "static",
-                      "detailHeaderFieldValue": "Detail",
-                      "detailSubHeaderField": "FremantleEventQuestion",
-                      "detailDescriptionField": "FremantleEventAnswer"
-                    }
-                  ]
+                  "linkText": "Event Info"
                 },
                 {
                   "type": "kendo-ui-mobile:editableListFormField",
@@ -215,14 +186,6 @@
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "brisbane",
-      "components": [],
-      "title": "Brisbane Beerfest",
-      "addToNavigation": true,
-      "icon": "mostrecent"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
       "name": "stallHolder",
       "components": [
         {
@@ -253,7 +216,7 @@
             }
           ],
           "name": "stallHolderModel",
-          "dataProvider": "appBuilder1",
+          "dataProvider": "beerfest",
           "collection": "StallHolders",
           "headerField": "StallHeading",
           "iconField": true,
@@ -291,19 +254,45 @@
     },
     {
       "type": "kendo-ui-mobile:view",
+      "name": "aboutView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:about",
+          "name": "aboutViewModel",
+          "appName": "Beerfest Australia",
+          "appVersion": "Version 1.0.7",
+          "appIcon": "beerfest-icon-10241024.png",
+          "appDescription": "Each of our Beer Festivals hosts huge variety of the very best Craft Brewers and Cider-makers Australia-wide, with over 250 Brews and Ciders to sample.\nYes, there will be live music, comedy and other forms of entertainment throughout the entire event. Please visit our set times closer to the date for detailed entertainment information.",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "info@beerfestivals.com.au",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/BeerfestAus/",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Twitter",
+          "twitterLink": "https://twitter.com/BeerFestivalAus"
+        }
+      ],
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
       "name": "login",
       "components": [
         {
           "type": "kendo-ui-mobile:authentication",
           "name": "loginModel",
-          "dataProvider": "appBuilder1",
+          "dataProvider": "beerfest",
           "enableRegistration": true,
           "gotoRegisterLabel": "Register",
           "registerEmailLabel": "Email",
           "registerPasswordLabel": "Password",
-          "registerNameLabel": "Name",
+          "registerNameLabel": "First and Last Name",
           "registerLabel": "Register",
-          "registerRedirect": "homeView",
+          "registerRedirect": "news",
           "gotoSigninLabel": "Sign In",
           "enableLogout": true,
           "logoutLabel": "Sign Out",
@@ -312,37 +301,12 @@
           "emailLabel": "Email",
           "passwordLabel": "Password",
           "signinLabel": "Sign In",
-          "signinRedirect": "homeView"
+          "signinRedirect": "news"
         }
       ],
       "title": "Login",
       "addToNavigation": true,
-      "icon": "home"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "aboutView",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:about",
-          "name": "aboutViewModel",
-          "appName": "My App",
-          "appVersion": "Version 1",
-          "appDescription": "App description",
-          "contactButton": true,
-          "contactLabel": "Contact us",
-          "contactMail": "support@example.com",
-          "facebookButton": true,
-          "facebookLabel": "Like us on Facebook",
-          "facebookLink": "https://www.facebook.com/Telerik",
-          "twitterButton": true,
-          "twitterLabel": "Follow us on Twitter",
-          "twitterLink": "https://twitter.com/telerik"
-        }
-      ],
-      "title": "About",
-      "addToNavigation": true,
-      "icon": "info"
+      "icon": "settings"
     },
     {
       "type": "kendo-ui-mobile:view",
@@ -360,10 +324,18 @@
       "source": "everlive",
       "everliveKey": "wet9j54227cnw5h8",
       "offlineStorage": true
+    },
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "beerfest",
+      "title": "Beerfest Australia / Beerfest Australia",
+      "source": "everlive",
+      "everliveKey": "wet9j54227cnw5h8",
+      "offlineStorage": true
     }
   ],
   "name": "appbuilder1",
   "navigation": "drawer",
-  "view": "homeView",
+  "view": "login",
   "skin": "native"
 }

@@ -10,7 +10,7 @@ app.news = kendo.observable({
 
 // END_CUSTOM_CODE_news
 (function(parent) {
-    var dataProvider = app.data.appBuilder1,
+    var dataProvider = app.data.beerfest,
         /// start global model properties
         /// end global model properties
         fetchFilteredData = function(paramFilter, searchFilter) {

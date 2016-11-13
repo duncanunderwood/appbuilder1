@@ -6,7 +6,7 @@
   "DisplayName": "Beerfest Australia",
   "Author": "Duncan Underwood",
   "Description": "Beerfest Australia",
-  "BundleVersion": "1.0.6",
+  "BundleVersion": "1.0.7",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
@@ -14,7 +14,6 @@
   ],
   "iOSBackgroundMode": [
     "location",
-    "fetch",
     "remote-notification"
   ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
@@ -60,10 +59,12 @@
     }
   },
   "CorePlugins": [
+    "com.phonegap.plugins.PushPlugin@3.2.0",
     "com.telerik.feedback@2.0.4",
     "com.telerik.plugin.telerikanalytics@3.4.1",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
+    "cordova-plugin-console",
     "cordova-plugin-contacts",
     "cordova-plugin-device",
     "cordova-plugin-device-motion",
@@ -80,6 +81,7 @@
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
     "cordova-plugin-vibration",
-    "cordova-plugin-whitelist"
+    "cordova-plugin-whitelist",
+    "org.apache.cordova.labs.keyboard"
   ]
 }

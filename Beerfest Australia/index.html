@@ -15,21 +15,21 @@
     <script src="app.js"></script>
     <script src="bower_components/everlive/min/everlive.all.min.js"></script>
     <script src="dataProviders/appBuilder1.js"></script>
+    <script src="dataProviders/beerfest.js"></script>
 </head>
 
 <body id="appbuilder1">
     <script src="components/fremantleEventInfo/index.js"></script>
-    <script src="components/aboutView/index.js"></script>
     <script src="components/login/index.js"></script>
+    <script src="components/aboutView/index.js"></script>
     <script src="components/photos/index.js"></script>
     <script src="components/stallHolder/index.js"></script>
-    <script src="components/brisbane/index.js"></script>
     <script src="components/melbourne/index.js"></script>
     <script src="components/hobart/index.js"></script>
     <script src="components/esk/index.js"></script>
     <script src="components/fremantleBeerfest/index.js"></script>
-    <script src="components/news/index.js"></script>
     <script src="components/tickets/index.js"></script>
+    <script src="components/news/index.js"></script>
     <script src="components/homeView/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
@@ -56,18 +56,16 @@
         </header>
         <ul id="navigation-container" data-role="listview">
             <li><a href="components/homeView/view.html" data-icon="home">Beerfest Australia</a></li>
-            <li><a href="components/tickets/view.html" data-icon="organize">Tickets</a></li>
             <li><a href="components/news/view.html" data-icon="info">News</a></li>
+            <li><a href="components/tickets/view.html" data-icon="organize">Tickets</a></li>
             <li><a href="components/fremantleBeerfest/view.html" data-icon="bookmarks">FremantleBeerfest</a></li>
             <li><a href="components/esk/view.html" data-icon="mostrecent">Esk Beerfest</a></li>
             <li><a href="components/hobart/view.html" data-icon="mostrecent">Hobart Beerfest</a></li>
             <li><a href="components/melbourne/view.html" data-icon="mostrecent">Melbourne Beerfest</a></li>
-            <li><a href="components/brisbane/view.html" data-icon="mostrecent">Brisbane Beerfest</a></li>
             <li><a href="components/stallHolder/view.html" data-icon="stop">Stall Holders</a></li>
             <li><a href="components/photos/view.html" data-icon="camera">Photos</a></li>
-            <li><a href="components/login/view.html" data-icon="home">Login</a></li>
-
             <li><a href="components/aboutView/view.html" data-icon="info">About</a></li>
+            <li><a href="components/login/view.html" data-icon="settings">Login</a></li>
             <li id="loginModellogout"><a href="components/login/view.html?logout=true" data-position="end" data-icon="action">Sign Out</a></li>
         </ul>
     </div>
